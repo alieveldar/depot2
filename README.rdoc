@@ -24,7 +24,7 @@ Things you may want to cover:
 * ... ***********jdjdjcjdcndncn  hhdhshdhshduwhuhwuehuheuwhuehweuwheuwhe
 если прошла значит все ок
 
-
+* SOSISTA TVWISTER 1
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
