@@ -21,10 +21,11 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ... ***********jdjdjcjdcndncn  hhdhshdhshduwhuhwuehuheuwhuehweuwheuwhe
+* ... ***********jdjdjcjdcndncn  hhdhshdhshduwhuhwuehuheuwhuehweuwheuwheш
 если прошла значит все ок
 
-* SOSISTA TVWISTER 1
+* SOSISTA TVWISTER 1 при
+* этот коммит пришел с нового ноута!!!!!!
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
