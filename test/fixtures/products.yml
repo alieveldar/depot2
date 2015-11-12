@@ -1,5 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
+ruby:
+   title: Programming Ruby 1.9
+   description:
+        Ruby is the fastest growing and most exciting dynamic
+        language out there. If you need to get working programs
+        delivered fast, you should add Ruby to you toolbox.
+    price: 49.50
+    image_url: ruby.png
 one:
   title: MyString
   description: MyText
