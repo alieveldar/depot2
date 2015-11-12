@@ -10,14 +10,14 @@ class ProductTest < ActiveSupport::TestCase
 	assert product.errors[:description].any?
 	assert product.errors[:price].any?
 	assert product.errors[:image_url].any?
-end
-test "product price must be positive" do
-#Цены должны быть позитивными
-product = Product.new(title:          "My books Title",
+    end
+       test "product price must be positive" do
+       #Цены должны быть позитивными
+        product = Product.new(title:          "My books Title",
 			description: "yyy",
 			image_url: 	"zzz.jpg")
 
-product.price = -1
+       product.price = -1
 assert product.invalid?
 assert_equal "must be greater than or equal to 0.1",
 product.errors[:price].join(': ')
@@ -52,4 +52,14 @@ bad.each do |name|
 					# не должно быть приемлемым
 end
 end
+   test "product is not valid without a unique title" do
+   	# если у товара нет уникального названия, то он недопустим
+   	product = Product.new(title: products(:ruby).title,
+   			description:  "yyy"
+   			price:   1,
+   			image_url:     "fred.gif")
+   	assert !product.save
+   	assert_equal "has already been taken", product.errors[:title].join('; ')
+   	       # уже было использовано
+   	   end
 end
