@@ -16,7 +16,7 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create(:title => 'Web Design for Developers',
+Product.create!(:title => 'Web Design for Developers',
   :description => 
     %{<p>
         <em>Web Design for Developers</em> will show you how to make your
@@ -30,7 +30,7 @@ Product.create(:title => 'Web Design for Developers',
   :image_url =>   'cs.jpg',    
   :price => 42.95)
 # . . .
-Product.create(:title => 'Programming Ruby 1.9',
+Product.create!(:title => 'Programming Ruby 1.9',
   :description =>
     %{<p>
         Ruby is the fastest growing and most exciting dynamic language
@@ -41,7 +41,7 @@ Product.create(:title => 'Programming Ruby 1.9',
   :price => 49.50)
 # . . .
 
-Product.create(:title => 'Rails Test Prescriptions',
+Product.create!(:title => 'Rails Test Prescriptions',
   :description => 
     %{<p>
         <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
