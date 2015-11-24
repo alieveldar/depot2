@@ -4,6 +4,7 @@
 <h1>Your Pragmatic Catalog</h1>
 <% @products.each do |product| %>
 	<div class="entry">
+	<%=stylesheet_link_tag "store" %>
 	<%=image_tag(product.image_url) %>
 	<h3><%= product.title %></h3>
 	<%= sanitize(product.description) %>
